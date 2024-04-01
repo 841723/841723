@@ -1,14 +1,9 @@
 # 🤠 About Me:
 Hi, I'm a young computer science student at Universidad de Zaragoza, Spain
 
-<img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
+<img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="35" height="30" alt="linkedin logo"  /> 
+[hola](https://www.linkedin.com/in/diego-roldan-urue%C3%B1a-27b553279)
 
-
-###
-
-<img src="https://raw.githubusercontent.com/841723/841723/output/snake.svg" alt="Snake animation" />
-
-###
 
 # 💻 Tech Stack:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
@@ -47,6 +42,11 @@ Hi, I'm a young computer science student at Universidad de Zaragoza, Spain
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) 
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) 
 
+###
+
+<img src="https://raw.githubusercontent.com/841723/841723/output/snake.svg" alt="Snake animation" />
+
+###
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=841723&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
