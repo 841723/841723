@@ -1,8 +1,9 @@
 # 🤠 About Me:
 Hi, I'm a young computer science student at Universidad de Zaragoza, Spain
 
-<img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="35" height="30" alt="linkedin logo"  /> 
-[hola](https://www.linkedin.com/in/diego-roldan-urue%C3%B1a-27b553279)
+[<img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="35" height="30" alt="linkedin logo"/>] (https://www.linkedin.com/in/diego-roldan-urue%C3%B1a-27b553279)
+
+
 
 
 # 💻 Tech Stack:
