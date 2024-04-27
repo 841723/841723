@@ -53,7 +53,7 @@ Hi, I'm a young computer science student at Universidad de Zaragoza, Spain
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=841723&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=841723&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?user=841723&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=841723&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=841723&theme=dark&no-frame=false&margin-w=4)
