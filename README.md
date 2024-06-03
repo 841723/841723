@@ -2,12 +2,9 @@
 Hi, I'm a young computer science student at Universidad de Zaragoza, Spain
 
 <div align="left">
-  <a href="https://www.linkedin.com/in/diego-roldan">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="35" height="30" alt="linkedin logo"/>
-  </a>
-  <strong>Contact me on LinkedIn to start a conversation!</strong>
+  <a href="https://www.linkedin.com/in/diego-roldan"><img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="35" height="30" alt="linkedin logo"/></a>
+  <em>Contact me on LinkedIn to start a conversation!</em>
 </div>
-
 
 
 
