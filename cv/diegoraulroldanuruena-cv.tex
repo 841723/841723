@@ -9,6 +9,9 @@
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
+\usepackage{graphicx}
+\usepackage{tikz} % for drawing the circle around the image
+\usepackage{bm} % for bold math symbols
 \usepackage{titlesec} % for customizing section titles
 \usepackage{tabularx} % for making tables with fixed width columns
 \usepackage{array} % tabularx requires this
@@ -150,86 +153,81 @@
     \newsavebox\ANDbox
     \sbox\ANDbox{$|$}
 
-    \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Diego Raúl Roldán Urueña
+    \noindent
+    \begin{minipage}[c]{0.10\textwidth}
+        \vspace{-1.7cm}
+        \begin{tikzpicture}
+            \begin{scope}
+                \clip (0,0) circle (1.5cm);
+                \node at (0,0) {\includegraphics[width=3cm]{yo-diegoraulroldanuruena.png}};
+            \end{scope}
+            \draw[line width=2pt] (0,0) circle (1.5cm);
+        \end{tikzpicture}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[r]{0.75\textwidth}
+        \centering % Centra horizontalmente el contenido
+        \fontsize{25pt}{25pt}\selectfont Diego Raúl Roldán Urueña
 
-        \vspace{5 pt}
+        \vspace{5pt}
 
         \normalsize
         \mbox{Zaragoza, ES}%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \AND%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \mbox{\hrefWithoutArrow{mailto:diegoraulroldan@gmail.com}{diegoraulroldan@gmail.com}}%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \AND%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \mbox{\hrefWithoutArrow{tel:+34-654-790-552}{+34 654 790 552}}%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \AND%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \mbox{\hrefWithoutArrow{https://diego.roldanu.es/}{diego.roldanu.es}}%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \AND%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \mbox{\hrefWithoutArrow{https://linkedin.com/in/diego-roldan}{linkedin.com/in/diego-roldan}}%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \AND%
-        \kern 5.0 pt%
+        \kern 5.0pt%
         \mbox{\hrefWithoutArrow{https://github.com/841723}{github.com/841723}}%
-    \end{header}
-
+    \end{minipage}   
     \vspace{5 pt - 0.3 cm}
 
 
     \section{Summary}
-    I build systems, break them intentionally, and make them better. \\
-    With a background in backend engineering and cybersecurity, I have production experience in monitoring, alerting, and incident response. Elastic Certified and active on Hack The Box. I'm always shipping something, currently a SIEM built from scratch in Go.
+        Cybersecurity engineer building \textbf{dieGO SIEM} from scratch in Go. \textbf{Elastic Certified Engineer} and \textbf{SIEM Analyst} with hands-on experience in SIEM operations, threat detection, and incident response using the Elastic Stack. Maintains a public writeup repository covering 25+ Hack The Box machines, read by 100+ users/month. Strong engineering background (Computer Science Engineer, GPA: 7.93, 6 Honors Distinctions) with Red/Blue Team perspective.
 
     % pon skills and certifications in two columns, skills on the left and certifications on the right just on top of each data column 
     \section{
         Skills \& Certifications
     }
 
-    \begin{minipage}[t]{0.48\textwidth}
-
-    \begin{itemize}
-    \item Go, Python, Java, JavaScript, Bash
-    \item Elastic ELK Stack (Elasticsearch, Kibana)
-    \item Backend, APIs, Microservices, SQL
-    \item Docker, Linux, Git, Kubernetes, CI/CD
-    \item Red Team, Blue Team, HTB
-    \item NodeJS, SpringBoot, React
-    \end{itemize}
-
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.48\textwidth}
-
-    \begin{itemize}
-    \item Elastic Certified Engineer
-    \item Elastic Certified SIEM Analyst
-    \end{itemize}
-    
-    \end{minipage}
+        \begin{itemize}[itemsep=-1pt]
+            \item \textbf{Certifications}: Elastic Certified Engineer · Elastic Certified SIEM Analyst
+            \item \textbf{Security}: ELK (Elasticsearch, Logstash, Kibana), SIEM, SOAR, MITRE ATT\&CK, SOC, IOC, Red \& Blue Team
+            \item \textbf{Languages}: Go, Python, Java, JavaScript, Bash, NodeJS
+            \item \textbf{Infrastructure}: Docker, Linux, Git, CI/CD, Proxmox, Nginx, AWS, Cloudflare
+            \item \textbf{Spoken}: Spanish (native) · English (B2 Cambridge) · German (A2)
+        \end{itemize}
+        
 
     \section{Experience}
        
     \begin{twocolentry}{
         Oct 2025 – present
     }
-        \textbf{Cyber Security Analyst} Nologin -- Zaragoza, ES
+        \textbf{Cybersecurity Engineer} Nologin -- Zaragoza, ES
     \end{twocolentry}
 
     \vspace{0.10 cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Managed and enhanced cybersecurity infrastructure protecting production environments, including firewalls, VPNs, proxies, and network segmentation
-            \item Configured and operated SIEM systems with strong focus on \textbf{Elastic Stack (Elasticsearch, Kibana)}, performing log ingestion, correlation, and advanced threat detection
-            \item Developed alerting mechanisms and monitoring pipelines to improve incident detection and response times
-            \item Conducted continuous security monitoring, incident analysis, and participated in forensic investigations
-            \item Collaborated in internal security audits and implemented security policies to reduce attack surface
-            \item Automated security and monitoring tasks using scripting, improving operational efficiency and response consistency
+            \item Operated Elastic Stack SIEM ingesting 200+ GB/day of logs from 20 sources. Built correlation, aggregation, and enrichment pipelines to detect and investigate security incidents across organizations
+            \item Designed and deployed custom detection rules and alerting pipelines in Kibana, covering +30 use cases aligned with MITRE ATT\&CK; contributed to reducing false positive rate by 20\%
+            \item Automated recurring SOC tasks (log parsing, alert triage, IOC enrichment) via SOAR and Python/Bash scripts, saving an estimated 10 hours/week of manual analyst work
         \end{highlights}
     \end{onecolentry}
 
@@ -245,25 +243,24 @@
     \begin{onecolentry}
         \begin{highlights}
             \item Developed and deployed 15 internal Power Apps to digitalize production workflows and reduce manual processes by 80\%
-            \item Collaborated with cross-functional teams to improve production tracking, reporting, and operational insights
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    % \vspace{0.2 cm}
 
-    \begin{twocolentry}{
-        Sep 2021 – Jun 2023
-    }
-        \textbf{Private Tutor}
-    \end{twocolentry}
+    % \begin{twocolentry}{
+    %     Sep 2021 – Jun 2023
+    % }
+    %     \textbf{Private Tutor}
+    % \end{twocolentry}
 
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Delivered personalized lessons in mathematics and computer science to high school students
-            \item Helped students achieve consistent academic improvement and stronger analytical skills
-        \end{highlights}
-    \end{onecolentry}
+    % \vspace{0.10 cm}
+    % \begin{onecolentry}
+    %     \begin{highlights}
+    %         \item Delivered personalized lessons in mathematics and computer science to high school students
+    %         \item Helped students achieve consistent academic improvement and stronger analytical skills
+    %     \end{highlights}
+    % \end{onecolentry}
 
     \section{Education}
         
@@ -287,6 +284,50 @@
                 \item Awarded 6 Honors Distinctions
             \end{highlights}
         \end{onecolentry}
+    
+    \section{Featured Projects}       
+        \textbf{dieGO SIEM} -- \href{https://github.com/841723/diego-siem}{https://github.com/841723/diego-siem}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Actively developing a SIEM (Security Information and Event Management) system \textbf{from scratch using Go}, designed to collect, analyze, and visualize security-related data from various sources
+                \item Built a \textbf{Docker-based} network simulation environment to test and validate SIEM detection capabilities across realistic attack scenarios
+                \item Used ClickHouse for storing logs, PostgreSQL for storing metadata and React for the frontend, for monitoring and analyzing security events
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.3 cm}
+        
+        \textbf{Hack The Box Writeup Repository} -- \href{https://diego.roldanu.es/\#writeups}{https://diego.roldanu.es/\#writeups}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed writeups for \textbf{over 25 Hack The Box machines}, detailing the steps taken to exploit vulnerabilities and gain access. Updated regularly to cover new machines and techniques
+                \item Shared the writeups on a public repository to help \textbf{more than 100 people per month} learn and understand the techniques used in penetration testing and ethical hacking
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.3 cm}
+
+        % \begin{twocolentry}{
+        %     \href{https://diego.roldanu.es/en/\#homelab}{https://diego.roldanu.es/en/\#homelab}
+        % }
+        %     \textbf{Home Lab}\end{twocolentry}
+
+        % \vspace{0.10 cm}
+        % \begin{onecolentry}
+        %     \begin{highlights}
+        %         \item Built a home lab environment using Proxmox, consisting of 7 virtual machines running Windows and Linux operating systems
+        %         \item Used the home lab to practice and demonstrate various cybersecurity techniques, including penetration testing, network monitoring, and incident response
+        %         \item Constantly updated and improved the home lab environment to include new services and configurations 
+        %     \end{highlights}
+        % \end{onecolentry}
+
+        % \vspace{0.2 cm}
+
+    
 
         % \vspace{0.2 cm}
         % \begin{twocolentry}{
@@ -318,58 +359,5 @@
     %     \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
     %     \end{onecolentry}
     %     \end{samepage}
-
-
-    
-    \section{Featured Projects}       
-        \begin{twocolentry}{
-            \href{https://github.com/841723/diego-siem}{Link}
-        }
-            \textbf{dieGO - SIEM}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a SIEM (Security Information and Event Management) system from scratch using Go, designed to collect, analyze, and visualize security-related data from various sources
-                \item Built a custom docker environment to simulate a realistic network environment for testing and demonstrating the capabilities of the SIEM system
-                \item Used the React framework for the frontend, ClickHouse for storing logs and PostgreSQL for storing metadata, creating an efficient and user-friendly interface for monitoring and analyzing security events
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://diego.roldanu.es/\#writeups}{Link}
-        }
-            \textbf{Hack The Box Writeup Repository}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed writeups for over 25 Hack The Box machines, detailing the steps taken to exploit vulnerabilities and gain access
-                \item Shared the writeups on a public repository to help more than 100 people per month learn and understand the techniques used in penetration testing and ethical hacking
-                \item Updating the repository regularly to include new writeups and improve existing ones
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://diego.roldanu.es/en/\#homelab}{Link}
-        }
-            \textbf{Home Lab}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a home lab environment using Proxmox, consisting of multiple virtual machines running various operating systems and services for testing and learning purposes
-                \item Used the home lab to practice and demonstrate various cybersecurity techniques, including penetration testing, network monitoring, and incident response
-                \item Constantly updated and improved the home lab environment to include new services and configurations 
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
 
 \end{document}
